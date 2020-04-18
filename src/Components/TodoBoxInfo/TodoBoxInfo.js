@@ -1,5 +1,5 @@
-import React, {Component} from "react"
-import "./TodoBoxInfo.css"
+import React, {Component} from "react";
+import "./TodoBoxInfo.css";
 
 class TodoBoxInfo extends Component{
     render(){
@@ -9,7 +9,7 @@ class TodoBoxInfo extends Component{
                 <p><small><b>Status : </b>Pending</small></p>
                 <p><small><b>Deadline : </b>{this.props.deadline}</small></p>
             </div>
-        )
+        );
     }
 }
 

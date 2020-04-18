@@ -1,5 +1,5 @@
-import React, {Component} from "react"
-import './header.css'
+import React, {Component} from "react";
+import './header.css';
 
 class Header extends Component{
     render(){
@@ -9,7 +9,7 @@ class Header extends Component{
                 <h3>Monthly Todo Clander</h3>
             </div>
         )
-    }
+    };
 }
 
 export default Header;

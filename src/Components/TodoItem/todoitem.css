@@ -24,3 +24,7 @@
 .todo-item>button:active {
     background-color: rgb(211, 211, 211);
 }
+
+.linethru {
+    text-decoration: line-through;
+}
