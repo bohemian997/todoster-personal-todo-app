@@ -3,6 +3,7 @@ import './App.css';
 import Header from '../Header/Header';
 import TodoBox from '../TodoBox/TodoBox';
 import todoMonthData from "../Database/todoMonthData";
+import Example from "../fb-comment/comment";
 
 class App extends Component {
 
@@ -15,12 +16,14 @@ class App extends Component {
   
     return (
       <div >
+        <Example/>
         <div className="text-center">
           <Header/>
         </div>
         <div>
           {tb}
         </div>
+        
       </div>
     );
   }

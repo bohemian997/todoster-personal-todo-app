@@ -6,8 +6,8 @@
     width: 100%;
     text-align: start;
     border: 0px;
-    background-color: transparent;
     margin: 0px;
+    background-color: transparent;
     padding: 6px;
 }
 
@@ -22,9 +22,13 @@
 
 .todo-item>button:hover,
 .todo-item>button:active {
-    background-color: rgb(211, 211, 211);
+    background-color: rgba(161, 161, 161, 0.349);
 }
 
 .linethru {
     text-decoration: line-through;
+}
+
+.success-bg {
+    background-color: rgba(152, 240, 21, 0.849);
 }
