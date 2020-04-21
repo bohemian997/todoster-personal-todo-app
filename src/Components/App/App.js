@@ -3,7 +3,7 @@ import './App.css';
 import Header from '../Header/Header';
 import TodoBox from '../TodoBox/TodoBox';
 import todoMonthData from "../Database/todoMonthData";
-import Example from "../fb-comment/comment";
+import Addtodo from "../Addtodo/Addtodo"
 
 class App extends Component {
 
@@ -16,9 +16,11 @@ class App extends Component {
   
     return (
       <div >
-        <Example/>
         <div className="text-center">
           <Header/>
+        </div>
+        <div className="box">
+          <Addtodo title="Name of Todo" placeholder="Add todo" name="addtodo"/>
         </div>
         <div>
           {tb}

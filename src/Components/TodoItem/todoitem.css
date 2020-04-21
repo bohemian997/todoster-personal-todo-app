@@ -27,6 +27,8 @@
 
 .linethru {
     text-decoration: line-through;
+    font-style: italic;
+    color: rgb(184, 184, 184);
 }
 
 .success-bg {

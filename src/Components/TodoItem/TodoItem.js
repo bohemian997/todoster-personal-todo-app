@@ -19,19 +19,17 @@ class TodoItem extends Component{
     
     
     render(){
+
         return(
-            <div  className ={this.state.done ? "todo-item linethru success-bg" : "todo-item"}>
+            <div  className ="todo-item">
                 <button onClick={() => this.checkboxHandler(this.state.todo.key)}>
                     <input type="checkbox" checked={this.state.done} onChange={() => this.checkboxHandler(this.state.todo.key)} name="todo1" />
-                    <label htmlFor="todo1" >{this.state.todo.todo}</label>
+                    <label htmlFor="todo1" className={this.state.done ? "linethru" : null}>{this.state.todo.todo}</label>
                 </button>
                 <hr/>
             </div>
         );
     }
 };
-
-
-
 
 export default TodoItem;
