@@ -1,5 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const bodyparser = require('body-parser');
+
+
 
 //api end-points
 const auth = require('./routes/api/auth');
@@ -10,6 +13,11 @@ const app = express();
 //Database config
 const dbURI = require("./config/keys").mongoURI
 
+
+
+//body parser middleware
+app.use(bodyparser.urlencoded({ encoded: false }));
+app.use(bodyparser.json())
 
 mongoose
     .connect(dbURI, {
